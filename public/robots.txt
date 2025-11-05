@@ -1,14 +1,189 @@
+
+# --- Поисковые системы ---
 User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Google-Extended
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-User-agent: Twitterbot
+User-agent: BingAI
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: Sogou
+Allow: /
+
+User-agent: Exabot
+Allow: /
+
+User-agent: Coccocbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-News
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# --- Соцсети и мессенджеры (для превью ссылок и контента) ---
+User-agent: Facebot
 Allow: /
 
 User-agent: facebookexternalhit
 Allow: /
 
+User-agent: Instagram
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Pinterestbot
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TikTokBot
+Allow: /
+
+# --- ИИ и обучающие модели ---
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OpenAI-Data
+Allow: /
+
+User-agent: OpenAI-Research
+Allow: /
+
+User-agent: Bard-Google
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: NeevaAI
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: GeminiBot
+Allow: /
+
+User-agent: MistralAI
+Allow: /
+
+User-agent: LLaMA
+Allow: /
+
+User-agent: HuggingFace
+Allow: /
+
+# --- Голосовые и ассистенты ---
+User-agent: AlexaBot
+Allow: /
+
+User-agent: SiriBot
+Allow: /
+
+User-agent: Cortana
+Allow: /
+
+User-agent: GoogleAssistant
+Allow: /
+
+# --- Общие разрешения ---
 User-agent: *
 Allow: /
+
+# =========================================================
+# --- Исключаем только технические и временные директории ---
+# =========================================================
+Disallow: /drafts/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /test/
+Disallow: /backup/
+Disallow: /internal/
+Disallow: /beta/
+Disallow: /logs/
+Disallow: /dev/
+Disallow: /admin/
+Disallow: /cgi-bin/
+
+Allow: /images/
+Allow: /photos/
+Allow: /menu/
+Allow: /about/
+Allow: /reviews/
+Allow: /contacts/
+Allow: /blog/
+Allow: /news/
+Allow: /video/
+Allow: /events/
+Allow: /team/
+Allow: /location/
+Allow: /gallery/
+
+# Sitemap — укажи реальный путь к файлу sitemap.xml
+Sitemap: https://shkafcafe.com/sitemap.xml
+
+# Host — основной домен сайта (для Яндекс и азиатских поисковиков)
+Host: shkafcafe.com
+
+# Crawl-delay — пауза между запросами (в секундах)
+Crawl-delay: 5
+
+# Clean-param — предотвращает дубли страниц с UTM и параметрами
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content
+
+# END OF FILE - Created for shkafcafe.com
